@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
     /*controlar dimensiones sin que se vean afectadas
     por el border o por el padding*/
     margin: 0;
     padding: 0;
+    color: #DE1D2D;
 }
 
 /*clases especiales*/
@@ -14,6 +20,12 @@
 .titulo {
     width: 100%;
     height: 50px;
+    padding: 52px;
+    background-color: rgba(255, 0, 0, 0);
+    font-family: "Lora", serif;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
 }
 
 /*contenedor para pantallas grandes*/
@@ -24,10 +36,22 @@
     /*quede centrado*/
 }
 
+/*cuerpo*/
+body {
+    background-image: url('../img/fondo-pagina.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /*la imagen se quede fija*/
+    font-family: "Poppins", serif;
+}
+
 /*navegador*/
 nav {
     width: 100%;
     height: 50px;
+    background-color: #A9A9A9;
+    position: fixed;
+    max-width: 1280px;
 }
 
 /*La suma da 100=65+15+20*/
@@ -35,6 +59,23 @@ nav {
     width: 20%;
     height: 100%;
     float: left;
+    padding: 5px;
+    /*no se pegue la imagen logo tanto al borde*/
+    /*aplica para la imagen y letras*/
+    text-align: center;
+}
+
+.logo img {
+    /*width: auto;*/
+    /*height: 100%; de los 50px*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*la imagen sea curva*/
+    /*Si se quiere rendondez total se tiene que
+    calcular en el ancho y alto en medida
+    en pixeles. Teniendo en cuenta la
+    altura nav 50px y padding de 5px*/
 }
 
 .navegacion {
@@ -49,11 +90,86 @@ nav {
     float: left;
 }
 
+/*niveles de navegación*/
+/*nivel 0*/
+nav ul {
+    list-style: none;
+    /*para quitar viñetas*/
+    text-align: right;
+}
+
+nav ul li {
+    /*Dejar los elementos de forma horizontal*/
+    width: 130px;
+    /*tamaño definido para todas las opciones (los elementos li)*/
+    background-color: #A9A9A9;
+}
+
+/*Para que los elementos ocultos cuando pase el mouse, muestre
+los elementos ul*/
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav .navegacion>ul>li {
+    display: inline-block;
+}
+
+nav .ingreso ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    /*para poder colocarle un margin o un padding
+al elemento <a>*/
+    text-decoration: none;
+    /*quitar el subrayado del link del anchor <a>*/
+    color: #ffffff;
+    padding: 15px 2px;
+    /*Recuerde que es arriba(15px)-derecha(2px)-abajo(15)-izquierda(2)*/
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+/*Recuerde hover es una pseudo-clase
+el proposito es que algo cambie o resalte cuando pase el cursor
+por descendencia el elemento <a> tendrá este efecto*/
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+/*nivel 1 -primer despliegue*/
+nav li ul {
+    position: absolute;
+    display: none;
+}
+
+/*Para las subítems de la opción ingreso*/
+nav .ingreso li ul {
+    width: 12.5%;
+    /*Se coloca un ancho al elemento de la clase ingreso
+    que sea acorde a lo que se necesita*/
+}
+
+nav li ul li {
+    position: relative;
+}
+
+/*nivel 2 -despligues laterales+*/
+nav li ul li ul {
+    left: 130px;
+    top: 2px;
+}
+
 /*encabezado*/
 header {
     width: 100%;
     height: 550px;
     /*depende del monitor*/
+    background-image: url('../img/fondo-header.jpg');
+    background-size: 100% 100%;
 }
 
 /*portafolio*/
@@ -66,12 +182,33 @@ main#portafolio {
 si se separa pensara que es de alguna del interior*/
     width: 100%;
     height: 550px;
+    background: #A9A9A9;
 }
 
 .div-porta {
     width: 33.33%;
     height: 100%;
     float: left;
+    text-align: center;
+    padding: 50px;
+    font-size: 13px;
+}
+
+.div-porta img {
+    width: 170px;
+    height: 150px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 50%;
+}
+
+/*en div porta hay una etiqueta p que quiero este justificada*/
+.div-porta p {
+
+    margin: 40px 0px 0px 0px;
+    /*cuando hay 2 medidas afecta primero
+    arriba y abajo y la otra es izq y der*/
+    /*margin-top: 20px;*/
+    text-align: justify;
 }
 
 /*quinenes-somos*/
@@ -117,6 +254,14 @@ section#contactenos {
     float: left;
 }
 
+/*para el video*/
+.div-arr iframe {
+    width: 100%;
+    height: 100%;
+    /*para el vídeo*/
+    border: 0;
+}
+
 .div-arr {
     width: 100%;
     height: 70%;
@@ -125,10 +270,27 @@ section#contactenos {
 .div-aba {
     width: 100%;
     height: 30%;
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+/*dirección contacto*/
+.direccion {
+    margin-top: 10px;
+}
+
+/*redes sociales*/
+.facebook {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    margin-top: 10px;
 }
 
 /*footer*/
 footer {
     width: 100%;
     height: 50px;
+    background-color: #A9A9A9;
 }
