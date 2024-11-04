@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+
+}
+
+body{
+    background-color: #222262;
+
+}
+
+/* Clases especiales*/
+.borde-izq {
+    border-radius: 10px 0 0 10px;
+}
+
+.borde-der {
+    border-radius: 0 10px 10px 0;
+}
+
+.titulos {
+    font-family: "Lora", serif;
+    color: white;
+
+}
+
+/* Contenedor */
+.contenedor {
+    width: 95%;
+    margin: auto;
+    font-family: "Lora", serif;
+
+}
+
+/* Navegador con migas de pan */
+nav {
+    width: 100%;
+    padding: 10px 0;
+    margin: 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: white;
+    font-size: 2em;
+}
+
+nav a:hover {
+    color: #000;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Área de trabajo */
+main {}
+
+/* Títulos */
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Imágenes */
+main img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+/* Formularios */
+.form-comp {
+    width: 90%;
+    margin: auto;
+}
+
+.form-doble {
+    width: 50%;
+    height: 400px;
+    background: #ddd;
+    border: 1px solid #bbb;
+    padding: 30px 0;
+    float: left;
+}
+
+form {
+    width: 100%;
+    padding: 20px 0;
+}
+
+form .form-enc {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+form h1 {
+    text-align: center;
+    background: #eee;
+    padding: 5px;
+}
+
+form .form-cuerpo {
+    width: 100%;
+    padding: 10px;
+}
+
+form label,
+form input {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+form label {
+    padding: 10px;
+    width: 40%;
+    text-align: right;
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+}
+
+form input,
+form select {
+    padding: 10px 5px;
+    width: 55%;
+}
+
+form .tipo-radio {
+    font-size: 0.8em;
+}
+
+form .tipo-radio label {
+    font-size: 1em;
+}
+
+form input[type="radio"] {
+    width: 5%;
+}
+
+form .form-pie {
+    width: 100%;
+    padding: 10px 50px 0 10px;
+    text-align: right;
+}
+
+form a {
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    padding: 13px;
+    background: #aaa;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    font-size: 0.8em;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+form .olvido {
+    padding: 0;
+    background: 0;
+    width: 180px;
+    text-align: right;
+}
+
+form a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+form .olvido:hover {
+    background: 0;
+    color: #999;
+}
+
+/* Estilos de Tablas */
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 0.7em;
+    width: 100%;
+
+}
+
+th {
+    background: #333;
+    color: #fff;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr {
+    background-color: #ffffff;
+}
+
+.tiwan {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+}
+
+/* Estilos para centrar los botones de acción en el formulario */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    gap: 10px;
+    /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+.btn-guardar,
+.btn-cancelar {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

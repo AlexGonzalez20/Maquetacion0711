@@ -19,11 +19,11 @@
     width: 100%;
     height: 50px;
     padding: 52px;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgba(183, 6, 6, 0);
     font-family: "Lora", serif;
     color: #fff;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /*contenedor para pantallas grandes*/
@@ -46,7 +46,7 @@ body {
 /*navegador*/
 nav {
     width: 100%;
-    height: 50px;
+    height: 56px;
     background-color: #A9A9A9;
     position: fixed;
     max-width: 1280px;
@@ -167,8 +167,6 @@ header {
     width: 100%;
     height: 550px;
     /*depende del monitor*/
-    background-image: url('../img/fondo-header.jpg');
-    background-size: 100% 105%;
 }
 
 /*portafolio*/
@@ -194,7 +192,7 @@ si se separa pensara que es de alguna del interior*/
 }
 
 .div-porta img {
-    width: 170px;
+    width: 160px;
     height: 150px;
     margin: 40px 0px 0px 0px;
     border-radius: 50%;

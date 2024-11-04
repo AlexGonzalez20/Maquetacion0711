@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../css/estilos-registro.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+        <main>
+            <h1 class="titulos">Registro de Usuario</h1>
+            <div class="form-comp">
+                <div class="form-doble borde-izq">
+                    <form action="procesar-registro.php" method="POST">
+                        <div class="form-cuerpo">
+                            <div>
+                                <label for="nombre">Nombre de usuario</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre de invocador" required>
+                            </div>
+                            <div>
+                                <label for="main">Main</label>
+                                <input type="text" name="main" id="main" placeholder="Campeón favorito" required>
+                            </div>
+                            <div>
+                                <label for="servidor">Servidor</label>
+                                <input type="text" name="servidor" id="servidor" placeholder="Región o servidor"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="correo">Correo</label>
+                                <input type="email" name="correo" id="correo" placeholder="Correo electronico" required>
+                            </div>
+                            <div>
+                                <label for="contrasena">Contraseña</label>
+                                <input type="password" name="contrasena" id="contrasena"
+                                    placeholder="Entre 8 y 12 caracteres" minlength="8" maxlength="12" required>
+                            </div>
+                            <div>
+                                <label for="repetir-contrasena">Repetir contraseña</label>
+                                <input type="password" name="repetir_contrasena" id="repetir-contrasena"
+                                    placeholder="Entre 8 y 12 caracteres" minlength="8" maxlength="12" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-doble borde-der">
+                    <form action="procesar-registro.php" method="POST">
+                        <div class="form-cuerpo">
+                            <div class="tipo-radio">
+                                <label>Sexo</label>
+                                <input type="radio" name="gender" value="male">Hombre
+                                <input type="radio" name="gender" value="female"> Mujer
+                                <input type="radio" name="gender" value="other"> Otro
+                            </div>
+                            <div>
+                                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                                <input type="date" name="fecha_nacimiento" id="fecha-nacimiento" required>
+                            </div>
+                            <div>
+                                <label for="rol">Rol Preferido</label>
+                                <select name="rol" id="rol" required>
+                                    <option value="top">Top</option>
+                                    <option value="jungle">Jungle</option>
+                                    <option value="mid">Mid</option>
+                                    <option value="adc">ADC</option>
+                                    <option value="support">Support</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-pie">
+                            <a type="submit" href="../index.html">Enviar</a>
+                            <a href="" type="reset">Limpiar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

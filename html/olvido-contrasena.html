@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="../css/estilos-recuperar.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <nav>
+            <a href="../index.html">Inicio</a>
+        </nav>
+        <hr>
+        <br>
+
+        <main>
+            <h1 class="titulos">Recuperar Contraseña</h1>
+            <p class="descripcion">Introduce tu dirección de correo electrónico asociada a tu cuenta para recibir un enlace de recuperación.</p>
+            <div class="form-recuperacion">
+                <form method="POST" >
+                    <div class="form-cuerpo">
+                        <div>
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electrónico" required>
+                        </div>
+                    </div>
+                    <div class="form-pie">
+                        <button type="submit" onclick="window.location.href='../index.html'">Enviar enlace de recuperación</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
