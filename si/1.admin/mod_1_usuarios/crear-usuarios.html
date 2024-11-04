@@ -4,44 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Crear usuarios</title>
-    <link rel="stylesheet" href="../../css/estilos-pagina.css">
+    <link rel="stylesheet" href="../../css/estilos-crear-usuario.css">
 </head>
 
 <body>
     <div class="contenedor">
         <nav>
-            <a href="../principal.html">Principal</a> / <a>Registrar Usuarios</a> / <a href="crear-usuarios.html">Crear
+            <a href="../principal.html">Principal</a> /
+            <a href="crear-usuarios.html">Crear
                 usuarios</a>
         </nav>
         <main>
-            <h1>Crear Usuarios</h1>
+            <h1 class="titulos">Crear Usuarios</h1>
             <div class="form-comp">
                 <div class="form-doble borde-izq">
                     <form action="" method="">
                         <div class="form-cuerpo">
                             <div>
-                                <label for="nombre">Nombres</label>
-                                <input type="text" name="nombre" id="nombre" placeholder="nombre completo">
+                                <label for="nombre">Nombre de usuario</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre de invocador">
                             </div>
                             <div>
-                                <label for="apellido">Apellidos</label>
+                                <label for="apellido">Main</label>
                                 <input type="text" name="apellidos" id="apellidos"
-                                    placeholder="apellidos paternos y maternos">
+                                    placeholder="Campeón favorito">
 
                             </div>
                             <div>
-                                <label for="correo">Correo</label>
-                                <input type="email" name="correo" id="correo" placeholder="correo@ejemplo.com">
+                                <label for="correo">Servidor</label>
+                                <input type="email" name="correo" id="correo" placeholder="Región o servidor">
                             </div>
                             <div>
                                 <label for="contrasena">Contraseña</label>
                                 <input type="password" name="contrasena" id="contrasena"
-                                    placeholder="entre 5 y 8 caracteres">
+                                    placeholder="Entre 8 y 12 caracteres">
                             </div>
                             <div>
                                 <label for="contrasena">Repetir contraseña</label>
                                 <input type="password" name="contrasena" id="contrasena"
-                                    placeholder="entre 5 y 8 caracteres">
+                                    placeholder="Entre 8 y 12 caracteres">
                             </div>
                         </div>
                         <div class="form-pie">
@@ -53,36 +54,30 @@
                         <div class="form-cuerpo">
                             <div class="tipo-radio">
                                 <label for="">Sexo</label>
-                                <input type="radio" name="gender" value="male" checked>Hombre
+                                <input type="radio" name="gender" value="male">Hombre
                                 <input type="radio" name="gender" value="female"> Mujer
                                 <input type="radio" name="gender" value="other"> Otro
                             </div>
                             <div>
-                                <label for="fecha-ingreso">Fecha Ingeso</label>
+                                <label for="fecha-ingreso">Fecha Nacimiento</label>
                                 <input type="date" name="fecha-ingreso" id="apellidos">
                             </div>
+
                             <div>
-                                <label for="correo">Profesión</label>
+                                <label for="correo">Rol Preferido</label>
                                 <select name="cars">
-                                    <option value="volvo">Estudiante</option>
-                                    <option value="saab">Ingeniero</option>
-                                    <option value="fiat">Licenciado</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="correo">Tipo Usuario</label>
-                                <select name="cars">
-                                    <option value="volvo">Cliente</option>
-                                    <option value="saab">Empleado</option>
-                                    <option value="fiat">Proveedor</option>
-                                    <option value="audi">Administrador</option>
+                                    <option value="volvo">Top</option>
+                                    <option value="saab">Jungle</option>
+                                    <option value="fiat">Mid</option>
+                                    <option value="audi">ADC</option>
+                                    <option value="audi">Support</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-pie">
                             <div>
-                                <a href="../index-admin.html">Enviar</a>
-                                <a href="../index-admin.html">Cancelar</a>
+                                <a href="#">Enviar</a>
+                                <a href="" type="reset">Cancelar</a>
                             </div>
                         </div>
                     </form>

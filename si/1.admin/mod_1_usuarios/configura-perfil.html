@@ -3,19 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Configuración</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Perfil</title>
     <link rel="stylesheet" href="../../css/estilos-pagina.css">
 </head>
 
 <body>
     <div class="contenedor">
         <nav>
-            <!--Se esta proponiendo una miga de pan en los enlaces anchor que se muestra a continuación:-->
-            <a href="../principal.html">Principal</a> / <a>Administrador</a>
-            <a href="reporte-usuarios.html">Configuración perfil</a>
+            <a href="../principal.html">Principal</a> /
+            <a href="configuracion-perfil.html">Configuración Perfil</a>
         </nav>
+
         <main>
-            <h1>Configuración perfil</h1>
+            <h1 class="titulos">Configuración de Perfil</h1>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Nueva contraseña" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="Confirmar nueva contraseña" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-guardar">Guardar Cambios</button>
+                    <button type="reset" class="btn-cancelar">Cancelar</button>
+                </div>
+            </form>
         </main>
     </div>
 </body>

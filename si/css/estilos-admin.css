@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Chelsea Market', cursive;
+    font-family: "Poppins", serif;
 }
 
 /* Clases especiales */
 .borde {
-    border: 1px solid #aaa;
+    border: 1px solid #000000;
 }
 
 /* Contenedor */
@@ -32,7 +32,7 @@ nav {
     width: 20%;
     height: 100%;
     text-align: center;
-    background: #F4F3F3;
+    background: #C42D3A;
     float: left;
 }
 
@@ -46,7 +46,7 @@ nav {
     width: 65%;
     height: 100%;
     /*background: #333;*/
-    background: #DE1D2D;
+    background: #C42D3A;
     float: left;
 }
 
@@ -309,3 +309,4 @@ footer {
     margin: 0;
     font-size: 0.8em;
 }
+
