@@ -1,1 +1,1 @@
-# Maquetacion0711
+Ejercicio de maquetación basado en la guía de la profesora Angélica María Triana Guarnizo.
